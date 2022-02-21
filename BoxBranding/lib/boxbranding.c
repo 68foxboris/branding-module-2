@@ -95,11 +95,6 @@ char *_getFriendlyFamily()
 	return strdup(FRIENDLYFAMILY);
 }
 
-char *_getOEVersion()
-{
-	return strdup(OE_VER);
-}
-
 char *_getImageDistro()
 {
 	return strdup(DISTRO);
