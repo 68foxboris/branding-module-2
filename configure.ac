@@ -1,4 +1,4 @@
-AC_INIT([openvision-branding-module],[7.0])
+AC_INIT([openpli-branding-module],[7.0])
 AM_INIT_AUTOMAKE([dist-bzip2 foreign no-define tar-pax])
 AC_CONFIG_HEADERS([enigma2-plugins-config.h])
 
@@ -22,26 +22,14 @@ AM_PATH_PYTHON
 AX_PYTHON_DEVEL
 AX_PTHREAD
 
-AC_ARG_WITH(imgversion,
-	[  --with-imgversion=NUMBER image version [[number,...]]],
-	[IMGVERSION="$withval"],[IMGVERSION=""])
-AC_SUBST(IMGVERSION)
-AC_DEFINE_UNQUOTED(IMGVERSION,"$IMGVERSION",[image version])
-
-AC_ARG_WITH(imgrevision,
-	[  --with-imgrevision=NUMBER image revision [[number,...]]],
-	[IMGREVISION="$withval"],[IMGREVISION=""])
-AC_SUBST(IMGREVISION)
-AC_DEFINE_UNQUOTED(IMGREVISION,"$IMGREVISION",[image revision])
-
 AC_ARG_WITH(imglanguage,
 	[  --with-imglanguage=NUMBER image language [[english,...]]],
-	[IMGLANGUAGE="$withval"],[IMGLANGUAGE=""])
+	[IMGLANGUAGE="$withval"],[LANGUAGE=""])
 AC_SUBST(IMGLANGUAGE)
-AC_DEFINE_UNQUOTED(IMGLANGUAGE,"$IMGLANGUAGE",[image language])
+AC_DEFINE_UNQUOTED(LANGUAGE,"$LANGUAGE",[image language])
 
 AC_ARG_WITH(developername,
-	[  --with-developername=NAME developer name [[persianprince,...]]],
+	[  --with-developername=NAME developer name [[foxbob,...]]],
 	[DEVELOPERNAME="$withval"],[DEVELOPERNAME=""])
 AC_SUBST(DEVELOPERNAME)
 AC_DEFINE_UNQUOTED(DEVELOPERNAME,"$DEVELOPERNAME",[developer name])
@@ -63,12 +51,6 @@ AC_ARG_WITH(friendlyfamily,
 	[FRIENDLYFAMILY="$withval"],[FRIENDLYFAMILY=""])
 AC_SUBST(FRIENDLYFAMILY)
 AC_DEFINE_UNQUOTED(FRIENDLYFAMILY,"$FRIENDLYFAMILY",[friendly family])
-
-AC_ARG_WITH(oever,
-	[  --with-oever=NUMBER oe number [[10.1,...]]],
-	[OE_VER="$withval"],[OE_VER=""])
-AC_SUBST(OE_VER)
-AC_DEFINE_UNQUOTED(OE_VER,"$OE_VER",[oe number])
 
 AC_ARG_WITH(distro,
 	[  --with-distro=NAME distro name [[openvision,...]]],

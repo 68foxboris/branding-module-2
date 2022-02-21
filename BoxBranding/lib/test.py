@@ -2,9 +2,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 import boxbranding
-print("getIMGVersion=%s<" % boxbranding.getIMGVersion())
-print("getIMGRevision=%s<" % boxbranding.getIMGRevision())
-print("getIMGLanguage=%s<" % boxbranding.getIMGLanguage())
+print("getLanguage=%s<" % boxbranding.getLanguage())
 print("getDeveloperName=%s<" % boxbranding.getDeveloperName())
 print("getBoxBrand=%s<" % boxbranding.getBoxBrand())
 print("getDisplayBrand=%s<" % boxbranding.getDisplayBrand())

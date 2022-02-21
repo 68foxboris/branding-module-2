@@ -16,9 +16,7 @@ static PyObject* name(PyObject* self, PyObject* args) \
 } \
 
 /* Available functions */
-MAKE_STRING_FUNCTION(getIMGVersion)
-MAKE_STRING_FUNCTION(getIMGRevision)
-MAKE_STRING_FUNCTION(getIMGLanguage)
+MAKE_STRING_FUNCTION(getLanguage)
 MAKE_STRING_FUNCTION(getDeveloperName)
 MAKE_STRING_FUNCTION(getBoxBrand)
 MAKE_STRING_FUNCTION(getDisplayBrand)
@@ -77,9 +75,7 @@ MAKE_STRING_FUNCTION(getDBoxLCD)
 
 /* Module specification */
 static PyMethodDef boxbrandingMethods[] = {
-	{ "getIMGVersion", getIMGVersion, METH_NOARGS, NULL },
-	{ "getIMGRevision", getIMGRevision, METH_NOARGS, NULL },
-	{ "getIMGLanguage", getIMGLanguage, METH_NOARGS, NULL },
+	{ "getLanguage", getLanguage, METH_NOARGS, NULL },
 	{ "getDeveloperName", getDeveloperName, METH_NOARGS, NULL },
 	{ "getBoxBrand", getBoxBrand, METH_NOARGS, NULL },
 	{ "getDisplayBrand", getDisplayBrand, METH_NOARGS, NULL },

@@ -10,9 +10,7 @@ int fileExist(const char* filename);
 
 char *ReadProcEntry(char *filename);
 
-char *_getIMGVersion();
-char *_getIMGRevision();
-char *_getIMGLanguage();
+char *_getLanguage();
 char *_getDeveloperName();
 char *_getBoxBrand();
 char *_getDisplayBrand();
